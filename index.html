@@ -9,7 +9,7 @@
 <body>
   <header class="site-header">
     <div class="header-top">
-      <a href="index.html" class="logo"><img src="img/logo.svg" alt="Логотип Техномарта" width="109" height="19"></a>
+      <a href="index.html" class="logo" aria-label="Логотип компании Техномарт"><img src="img/logo.svg" alt="Логотип Техномарта" width="109" height="19"></a>
       <a href="#" class="header-item">Поиск</a>
     </div>
     <div class="header-link">
@@ -61,7 +61,7 @@
         <h2 class="main-contacts-title">Контакты</h2>
         <p> Вы можете забрать товар сами, заехав в наш офис:
         </p>
-        <a href="#"><img src="img/map-index.jpg" width="300" height="158" alt="Место расположения магазина"></a>
+        <a href="#"><img src="img/map-index.jpg" width="300" height="158" alt="Офис компании по адресу: Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></a>
         <a class="button" href="#">Заблудились? Напишите нам!</a>
       </section>
     </section>
@@ -105,7 +105,25 @@
   </footer>
   <section class="write-us">
     <h2>Напишите нам!</h2>
-    <!-- Здесь будет форма -->
+    <img src="img/map.jpg" alt="Офис компании по адресу: Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="940" height="446">
+    <form action="https://echo.htmlacademy.ru" method="post" class="write-us-form">
+      <label>
+       Ваше имя<input type="text" name="username" placeholder="Имя Фамилия" required>
+      </label>
+      <label>
+       Ваш e-mail<input type="text" name="useremail" placeholder="email@example.com" required>
+      </label>
+      <label for="letter">Текст письма</label>
+      <textarea type="text" id="letter" name="letter" rows="8">В свободной форме</textarea>
+      <input type="submit" value="Отправить" name="Отправить" class="button">
+      </form>
+      <button class="form-close" type="button" name="form-close" aria-label="Закрыть"></button>
   </section>
+  <div class="modal-basket-activ visually-hidden">
+   <p class="basket-text">Товар добавлен в корзину!</p>
+   <button class="modal-close" type="button" name="modal-close" aria-label="Закрыть"></button>
+   <a href="№" class="button">Оформить заказ</a>
+   <a href="catalog.html" class="next-shopping">Продолжить покупки</a>
+  </div>
 </body>
 </html>
