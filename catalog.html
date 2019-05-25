@@ -11,8 +11,8 @@
     <div class="header-top">
       <a class="logo" href="index.html"  aria-label="Логотип компании Техномарт"><img src="logo.svg" alt="Логотип Техномарта" width="109" height="19"></a>
       <form class="header-item" method="get" action="https://echo.htmlacademy.ru">
+        <button class="button-search" type="submit"></button>
         <label>
-          <button class="button-search" type="search"></button>
           Поиск:<input type="text" name="search">
         </label>
       </form>
@@ -61,14 +61,13 @@
       <h2 class="visually-hidden">Фильтры товаров</h2>
       <!-- Здесь будет форма -->
     </section>
-
-      <section class="catalog">
-        <div>
-
-          <h2 class="visually-hidden">Сортировка:</h2>
-          <form class="sort" method="get" > По цене По типу По функционалу
-
-        </div>
+    <section class="catalog">
+      <div>
+        <h2 class="visually-hidden">Сортировка:</h2>
+        <button name="price">По цене</button>
+        <button name="type">По типу</button>
+        <button name="function">По функционалу</button>
+      </div>
         <h2 class="visually-hidden">Перечень перфораторов</h2>
         <article class="catalog-item">
           <img src="img/item-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
@@ -208,47 +207,45 @@
           <li class="pagination-item"><a href="#">Следующая</a></li>
         </ul>
       </section>
-  </main>
+    </main>
 
-  <footer class="site-footer">
-    <div class="footer-top">
-    <a class="logo" href="index.html"><img src="img/logo.svg" alt="Логотип Техномарта" width="109" height="19"> </a>
-    <ul class="footer-navigation">
-      <li><a href="#">Компания</a></li>
-      <li><a href="#">Новости</a></li>
-      <li><a href="catalog.html">Каталог</a></li>
-      <li><a href="#">Доставка</a></li>
-      <li><a href="#">Контакты</a></li>
-    </ul>
-</div>
-<div class="footer-middle">
-    <div class="footer-contacts">
-      <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-      <p>+7(812)555-05-55</p>
-    </div>
-    <ul class="footer-products">
-      <li><a href="#">Материалы</a></li>
-      <li><a href="#">Техника</a></li>
-      <li><a href="#">Инструмент</a></li>
-      <li><a href="#">Спецпредложения</a></li>
-    </ul>
-</div>
-    <div class="footer-bottom">
-      <p class="footer-copyright">2010–2019 Компания «Техномарт»<br>
+    <footer class="site-footer">
+      <div class="footer-top">
+        <a class="logo" href="index.html"><img src="img/logo.svg" alt="Логотип Техномарта" width="109" height="19"> </a>
+        <ul class="footer-navigation">
+          <li><a href="#">Компания</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="catalog.html">Каталог</a></li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </div>
+      <div class="footer-middle">
+        <div class="footer-contacts">
+          <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+          <p>+7(812)555-05-55</p>
+        </div>
+        <ul class="footer-products">
+          <li><a href="#">Материалы</a></li>
+          <li><a href="#">Техника</a></li>
+          <li><a href="#">Инструмент</a></li>
+          <li><a href="#">Спецпредложения</a></li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p class="footer-copyright">2010–2019 Компания «Техномарт»<br>
         Все права защищены</p>
-      <ul>
-        <li><a class="social-button vk" href="#">Вконтакте</a></li>
-        <li><a class="social-button facebook" href="#">Фейсбук</a></li>
-        <li><a class="social-button instagram" href="#">Инстаграмм</a></li>
-      </ul>
-      <p class="footer-feedback">Обратная связь:<br>
-        <a class="contact-htmlacademy" href="#"> mail@htmlacademy.ru</a></p>
-      <p class="footer-copyright-htmlacademy">Разработано —
-        <a class="contact-htmlacademy" href="https://htmlacademy.ru">
-          htmlacademy.ru
-        </a>
-      </p>
-    </div>
-  </footer>
-</body>
+        <ul>
+          <li><a class="social-button vk" href="#">Вконтакте</a></li>
+          <li><a class="social-button facebook" href="#">Фейсбук</a></li>
+          <li><a class="social-button instagram" href="#">Инстаграмм</a></li>
+        </ul>
+        <p class="footer-feedback">Обратная связь:<br>
+          <a class="contact-htmlacademy" href="#"> mail@htmlacademy.ru</a></p>
+        <p class="footer-copyright-htmlacademy">Разработано —
+          <a class="contact-htmlacademy" href="https://htmlacademy.ru">
+          htmlacademy.ru</a></p>
+       </div>
+     </footer>
+   </body>
 </html>
