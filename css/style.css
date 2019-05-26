@@ -1,0 +1,219 @@
+body {
+ margin: 0;
+ padding: 0;
+ font-family: "Cuprum", Arial, sans-serif;
+ font-size: 13px;
+ line-height: 24px;
+ font-weight: 400;
+ color: #000000;
+ background-color: #ffffff;
+}
+
+a {
+ text-decoration: none;
+ color: #ffffff;
+}
+
+.site-header {
+  width: 1200px;
+  height: 320px;
+  background-color: #f4f7f9;
+}
+
+.header-top {
+  width: 1200px;
+  height: 42px;
+  background-color: #293449;
+}
+
+.logo {
+  width: 220px;
+  height: 47px;
+  box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
+  background-color: #ee3643;
+}
+
+.logo:hover {
+  background-color: #ca2c37;
+}
+
+.logo:active {
+  background-color: #ba2732;
+}
+
+.header-item {
+  font-size: 17px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.06;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+}
+
+.tabs:active,
+.basket:active {
+  color: rgba(255, 255, 255, 0.6);
+  background-color: #161d29;
+}
+
+.do-order {
+  background-color: #63a63e;
+}
+
+.do-order:hover {
+  background-color: #5fbb2d;
+}
+
+.do-order:active {
+  color: rgba(255, 255, 255, 0.5);
+  background-color: #518534;
+}
+
+.site-title {
+  font-size: 16px;
+  font-style: italic;
+  font-stretch: normal;
+  line-height: 1.44;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ee3643;
+}
+
+.telephone-number {
+  font-size: 21px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ee3643;
+}
+
+.location {
+ font-size: 14px;
+ font-style: normal;
+ font-stretch: normal;
+ line-height: 1.71;
+ letter-spacing: normal;
+ text-align: center;
+ color: #32425c;
+}
+
+.user-navigation {
+  font-size: 21px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+.site-navigation {
+  font-size: 17px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: #ffffff;
+
+  width: 940px;
+  height: 60px;
+  box-shadow: inset 0px -5px 0 0 #293449;
+  background-color: #32425c;
+  list-style: none;
+}
+
+.site-navigation li {
+  list-style: none;
+}
+.site-navigation: hover a {
+  background-color: #32425c;
+}
+
+.site-navigation: active a {
+  background-color: #1d2739;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.login-link,
+.sign-in {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.features-title,
+.main-contacts-title {
+  font-size: 30px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.features p,
+.main-contacts p {
+  font-family: PTSans;
+  font-size: 13px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.85;
+  letter-spacing: normal;
+  text-align: left;
+}
+
+.delivery-companies ul {
+  font-size: 18px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.11;
+  letter-spacing: normal;
+  text-align: left;
+  list-style: none;
+}
+
+.button {
+  font-size: 14px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  text-align: center;
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.site-footer {
+  font-size: 18px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.33;
+  letter-spacing: normal;
+  text-align: left;
+  background-color: #32425c;
+  list-style: none;
+  }
+
+.footer-navigation {
+  list-style: none;
+}
+
+.footer-products li,
+.contact-htmlacademy li,
+.social-buttons li {
+  list-style: none;
+}
+
+.footer-bottom {
+  color: #ffffff;
+  font-size: 16px;
+  background-color: #293449;
+}
+
+.footer-products a,
+.contact-htmlacademy a {
+  color: #ffd180;
+}
