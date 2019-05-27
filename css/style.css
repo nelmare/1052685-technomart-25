@@ -1,25 +1,22 @@
 body {
- margin: 0;
- padding: 0;
- font-family: "Cuprum", Arial, sans-serif;
- font-size: 13px;
- line-height: 24px;
- font-weight: 400;
- color: #000000;
- background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #ffffff;
 }
 
 a {
- text-decoration: none;
- color: #ffffff;
+  text-decoration: none;
+  color: #ffffff;
 }
 
 .site-header {
   min-height: 320px;
   margin-bottom: 59px;
-
-
-
   background-color: #f4f7f9;
 }
 
@@ -27,9 +24,9 @@ a {
   background-color: #293449;
   display: flex;
   justify-content: space-around;
-width: 100%;
-align-items: center;
-margin-bottom: 46px;
+  width: 100%;
+  align-items: center;
+  margin-bottom: 46px;
 }
 
 .header-top-wraper {
@@ -49,7 +46,6 @@ margin-bottom: 46px;
 .logo {
   box-shadow: inset 0px -5px 0 0 rgba(0, 0, 0, 0.24);
   background-color: #ee3643;
-
   width: 220px;
   height: 47px;
   display: block;
@@ -120,18 +116,18 @@ margin-bottom: 46px;
   width: 270px;
   height: 45px;
   border: solid 3px #ffffff;
-
 }
 
 .location {
- font-size: 14px;
- font-style: normal;
- font-stretch: normal;
- line-height: 1.71;
- letter-spacing: normal;
- text-align: center;
- color: #32425c;
+  font-size: 14px;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  text-align: center;
+  color: #32425c;
 }
+
 .header-contacts {
   width: 320px;
 }
@@ -152,9 +148,7 @@ margin-bottom: 46px;
   font-stretch: normal;
   line-height: 1;
   letter-spacing: normal;
-
   color: #ffffff;
-
   width: 940px;
   height: 60px;
   box-shadow: inset 0px -5px 0 0 #293449;
@@ -164,8 +158,6 @@ margin-bottom: 46px;
   margin: 0;
   padding: 0;
   margin-left: 130px;
-
-
 }
 
 .site-navigation-list {
@@ -173,14 +165,14 @@ margin-bottom: 46px;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-
+  margin: 0;
   padding: 22px 55px 26px 52px;
 }
 
 .site-navigation li {
   list-style: none;
-
 }
+
 .site-navigation:hover a {
   background-color: #32425c;
 }
@@ -194,6 +186,24 @@ margin-bottom: 46px;
 .sign-in {
   background-color: #ffffff;
   color: #000000;
+}
+
+.container {
+  display: flex;
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+  flex-direction: row;
+  min-height: 536px;
+  justify-content: space-between;
+}
+
+.company-presentation {
+  width: 540px;
+}
+
+.main-contacts {
+  width: 300px;
 }
 
 .features-title,
@@ -245,13 +255,63 @@ margin-bottom: 46px;
   font-stretch: normal;
   line-height: 1.33;
   letter-spacing: normal;
-  text-align: left;
   background-color: #32425c;
   list-style: none;
-  }
+  width: 940px;
+  min-height: 300px;
+  margin-top: 86px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+  padding-right: 10 px;
+}
+
+.footer-top {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  justify-content: space-between;
+}
 
 .footer-navigation {
   list-style: none;
+  width: 550px;
+  margin-left: 173px;
+}
+
+.footer-middle {
+  display: flex;
+  margin: 0 auto;
+  width: 100%;
+  justify-content: center;
+}
+
+.footer-contacts {
+  width: 380px;
+  margin-right: 68px;
+}
+
+.footer-products {
+  width: 540px;
+}
+
+.footer-copyright {
+  width: 230px;
+  margin-right: 160px;
+}
+
+.social-buttons {
+  width: 150px;
+  margin-right: 90px;
+}
+
+.footer-feedback {
+  width: 140px;
+  margin-right: 20px;
+}
+
+.footer-copyright-htmlacademy {
+  width: 140px
 }
 
 .footer-products li,
@@ -264,7 +324,11 @@ margin-bottom: 46px;
   color: #ffffff;
   font-size: 16px;
   background-color: #293449;
+  display: flex;
+  width: 100%;
+  justify-content: center;
 }
+
 
 .footer-products a,
 .contact-htmlacademy {
