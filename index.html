@@ -5,33 +5,35 @@
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-  <link href="css//normalize.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
   <header class="site-header">
     <div class="header-top">
-    <div class="header-top-wraper">
-      <a class="logo" href="index.html"  aria-label="Логотип компании Техномарт"><img src="img/logo.svg" alt="Логотип Техномарта" width="109" height="19"></a>
-      <form class="header-item" method="get" action="#">
-        <button class="button-search" type="submit"></button>
-        <label>
-          Поиск:<input type="text" name="search">
-        </label>
-      </form>
-    </div>
-    <div class="header-link">
-      <a class="tabs" href="#">Закладки:0</a>
-      <a class="basket" href="#">Корзина:0</a>
-      <a class="do-order" href="#">Оформить заказ</a>
+      <div class="container">
+      <div class="header-top-wraper">
+        <a class="logo" href="index.html"  aria-label="Логотип компании Техномарт"><img src="img/logo.svg" alt="Логотип Техномарта" width="109" height="19"></a>
+        <form class="header-item" method="get" action="#">
+          <button class="button-search" type="submit"></button>
+            <label>Поиск:
+              <input type="text" name="search">
+            </label>
+        </form>
+      </div>
+      <div class="header-link">
+        <a class="tabs" href="#">Закладки: 0</a>
+        <a class="basket" href="#">Корзина: 0</a>
+        <a class="do-order" href="#">Оформить заказ</a>
+      </div>
     </div>
   </div>
 
   <div class="header-middle">
-    <h1 class="site-title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+    <h1 class="site-title">Интернет-магазин строительных материалов<br>и инструментов для ремонта</h1>
     <div class="header-contacts">
-      <span class="telephone-number"><a href="tel:+78125550555">+7(812)555-05-55</a></span>
+      <a class="telephone-number" href="tel:+78125550555">+7(812)555-05-55</a>
       <p class="location">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
     </div>
     <div class="user-navigation">
@@ -53,6 +55,22 @@
   </header>
 
   <main class="container">
+    <section class="advantages">
+      <h2 class="advantages-title">Преимущества магазина</h2>
+      <ul class="advantages-list">
+        <li><a class="materials" href="#">Материалы <span>на любой вкус</span></a></li>
+         <li><a class="instrument" href="#">Инструмент <span>на все случаи</span></a></li>
+         <li><a class="technique" href="#">Техника <span>для стройки</span></a></li>
+         <li>Дрели
+           <p>Соседям на радость!</p>
+           <a class="button" href="#">Открыть каталог</a></li>
+           <li>Перфораторы
+             <p>Настоящие мужские игрушки</p>
+             <a class="button" href="#">Открыть каталог</a></li>
+         <li><a class="discount" href="#">Скидки 50% <span>на 350 товаров</span></a></li>
+         <li><a class="footer-delivery" href="#">Доставка <span>бесплатно</span></a></li>
+      </ul>
+    </section>
     <!-- Здесь будет часть главной страницы -->
     <section class="company-presentation">
       <section class="features">
@@ -66,13 +84,13 @@
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <a class="button" href="info.html">Подробнее о компании</a>
+        <a class="button button-company" href="info.html">Подробнее о компании</a>
       </section>
       <section class="main-contacts">
         <h2 class="main-contacts-title">Контакты</h2>
-        <p> Вы можете забрать товар сами, заехав в наш офис:</p>
+        <p> Вы можете забрать товар сами,<br>заехав в наш офис:</p>
         <a href="#"><img src="img/map-index.jpg" width="300" height="158" alt="Офис компании по адресу: Санкт-Петербург, ул. Б. Конюшенная, д. 19/8"></a>
-        <a class="button" href="#">Заблудились? Напишите нам!</a>
+        <a class="button button-write" href="#">Заблудились? Напишите нам!</a>
       </section>
     </section>
   </main>
@@ -90,8 +108,8 @@
     </div>
     <div class="footer-middle">
       <div class="footer-contacts">
-        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-        <p>+7(812)555-05-55</p>
+        <p>г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
+        +7(812)555-05-55</p>
       </div>
       <ul class="footer-products">
         <li><a href="#">Материалы</a></li>
@@ -115,7 +133,7 @@
      </div>
    </footer>
 
-   <div class="map-modal">
+   <div class="modal map">
      <img src="img/map.jpg" alt="Офис компании по адресу: Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="940" height="446">
      <button class="form-close" type="button" name="form-close">
        <img src="img/icons/close.svg" width="21" height="21" alt="Закрыть"></button>
@@ -126,16 +144,16 @@
      <button class="form-close" type="button" name="form-close">
        <img src="img/icons/close.svg" width="21" height="21" alt="Закрыть"></button>
      <form action="https://echo.htmlacademy.ru" method="post" class="write-us-form">
-       <label>
-       Ваше имя<input type="text" name="username" placeholder="Имя Фамилия" required>
+       <label>Ваше имя
+         <input type="text" name="username" placeholder="Имя Фамилия" required>
        </label>
-       <label>
-       Ваш e-mail<input type="email" name="useremail" placeholder="email@example.com" required>
+       <label>Ваш e-mail
+         <input type="email" name="useremail" placeholder="email@example.com" required>
        </label>
        <label>Текст письма
-       <textarea name="letter" rows="8">В свободной форме</textarea>
+         <textarea name="letter" rows="8">В свободной форме</textarea>
        </label>
-       <input type="submit" value="Отправить" name="Отправить" class="button">
+       <input class="button button-modal" type="submit" value="Отправить" name="Отправить">
      </form>
    </div>
 
@@ -143,7 +161,7 @@
      <button class="modal-close" type="button" name="modal-close">
        <img src="img/icons/close.svg" width="21" height="21" alt="Закрыть"></button>
      <p class="basket-text">Товар добавлен в корзину!</p>
-     <a href="№" class="button">Оформить заказ</a>
+     <a class="button" href="#">Оформить заказ</a>
      <a class="button next-shopping" href="catalog.html">Продолжить покупки</a>
    </div>
  </body>
