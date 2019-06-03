@@ -1,6 +1,6 @@
-/* {
+*{
   outline: 1px solid red;
-}*/
+}
 
 body {
   margin: 0;
@@ -11,6 +11,7 @@ body {
   font-weight: 400;
   color: #000000;
   background-color: #ffffff;
+
 }
 
 a {
@@ -27,6 +28,7 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  /*min-width: 940px; уточнить*/
 }
 
 .header-top {
@@ -42,10 +44,11 @@ a {
 }
 
 .header-top-wraper {
-  width: 635px;
+  width: 940px;
   display: flex;
   align-items: center;
   margin: 0 auto;
+  justify-content: space-between;
 }
 
 .header-middle {
@@ -100,7 +103,7 @@ a {
   display: flex;
   font-size: 17px;
   font-weight: normal;
-  margin: 0 auto;
+  margin: 0;
 
 }
 
@@ -293,8 +296,7 @@ padding: 20px 35px 25px 30px;
 
 .login-link:active,
 .sign-in:active {
-  color: var(--black-30);
-  opacity: 0.3;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .container {
@@ -375,6 +377,7 @@ padding-bottom: 0;
 .button-write {
   padding-left: 61px;
   padding-right: 62px;
+  margin-top: 50px;
 }
 .site-footer {
   font-size: 18px;
@@ -572,6 +575,6 @@ padding-bottom: 0;
   border-left: 80px solid #f4f4f4;
   border-right: 80px solid #f4f4f4;
 }
-.basket {
+.basket-modal {
   display: none;
 }
