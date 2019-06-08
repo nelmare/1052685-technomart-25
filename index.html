@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
@@ -16,9 +17,7 @@
         <a class="logo" href="index.html"  aria-label="Логотип компании Техномарт"><img src="img/logo.svg" alt="Логотип Техномарта" width="109" height="19"></a>
         <form class="header-item" method="get" action="#">
           <button class="button-search" type="submit"></button>
-          <label>Поиск:
-            <input type="text" name="search">
-          </label>
+          <input type="text" name="search" placeholder="Поиск:">
         </form>
         <div class="header-link">
           <a class="tabs" href="#">Закладки: 0</a>
@@ -234,18 +233,20 @@
      <h2>Напишите нам!</h2>
      <button class="form-close" type="button" name="form-close">
        <img src="img/icons/close.svg" width="21" height="21" alt="Закрыть"></button>
-     <form action="https://echo.htmlacademy.ru" method="post" class="write-us-form">
-       <label>Ваше имя
+     <form class="write-us-form"action="https://echo.htmlacademy.ru" method="post">
+       <label class="name-line">Ваше имя
          <input type="text" name="username" placeholder="Имя Фамилия" required>
        </label>
-       <label>Ваш e-mail
+       <label class="email-line">Ваш e-mail
          <input type="email" name="useremail" placeholder="email@example.com" required>
        </label>
-       <label>Текст письма
-         <textarea name="letter" rows="8">В свободной форме</textarea>
+       <label class="write-line">Текст письма
+         <textarea class="write-textarea" name="letter" rows="8">В свободной форме</textarea>
        </label>
-       <input class="button button-modal" type="submit" value="Отправить" name="Отправить">
      </form>
+     <div  class="form-button-footer">
+       <input class="button button-modal" type="submit" value="Отправить" name="Отправить">
+     </div>
    </div>
 
    <div class="modal basket-modal">

@@ -4,21 +4,20 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Техномарт</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-  <header class="site-header">
+  <header class="site-header site-header-inner">
     <div class="header-top">
       <div class="header-top-wraper">
         <a class="logo" href="index.html"  aria-label="Логотип компании Техномарт"><img src="img/logo.svg" alt="Логотип Техномарта" width="109" height="19"></a>
         <form class="header-item" method="get" action="#">
           <button class="button-search" type="submit"></button>
-          <label>Поиск:
-            <input type="text" name="search">
-          </label>
+          <input type="text" name="search" placeholder="Поиск:">
         </form>
         <div class="header-link">
           <a class="tabs" href="#">Закладки: 0</a>
@@ -40,7 +39,7 @@
         </div>
         <div class="user-line2">
           <a href="users-orders">Мои заказы</a>
-          <a href="account">Личный кабинет</a>
+          <a class="user-line2-account" href="account">Личный кабинет</a>
         </div>
       </div>
     </div>
@@ -63,25 +62,71 @@
       <li><a href="#">Инструмент</a></li>
       <li><a class="breadcrumbs-current">Перфораторы</a></li>
     </ul>
-    <h1 class="page-title">Перфораторы</h1>
+    <h1 class=" ">Перфораторы</h1>
+    <div class="main-content">
     <section class="filters">
-      <h2 class="visually-hidden">Фильтры товаров</h2>
-      
+      <h2 class="filter-title">Фильтр</h2>
+      <form class="price-form" action="#" method="post">
+        <label class="filter-name" for="range">Цена:</label>
+        <input type="range" id="range" min=0 max=30000 value="цена">
+        <div class="marks">
+          <span>0</span>
+          <span>30000</span>
+        </div>
+      </form>
 
-      <!-- Здесь будет форма -->
+        <fieldset class="producers-fieldset">
+          <legend class="filter-name">Производители:</legend>
+          <ul class="producers-list">
+          <li class="filter-option">
+            <input class="filter-input filter-input-checkbox" type="checkbox" name="bosch" id="bosch" checked>
+            <label for="bosch">Bosch</bosch>
+          </li>
+          <li class="filter-option">
+            <input class="filter-input filter-input-checkbox" type="checkbox" name="interscol" id="interskol">
+            <label for="interskol">Интерскол</label>
+          </li>
+          <li class="filter-option">
+            <input class="filter-input filter-input-checkbox" type="checkbox" id="makita" checked>
+            <label for="interskol">Makita</label>
+          </li>
+          <li class="filter-option">
+            <input class="filter-input filter-input-checkbox" type="checkbox" id="dewalt">
+            <label for="dewalt">Dewalt</label>
+          </li>
+          <li class="filter-option">
+            <input class="filter-input filter-input-checkbox" type="checkbox" id="hitachi">
+            <label>Hitachi</label>
+        </fieldset>
+
+        <fieldset class="food-fieldset">
+          <legend class="filter-name">Питание:</legend>
+          <ul class="food-list">
+          <li class="filter-option">
+            <input class="filter-input filter-input-radiobutton" type="radio" name="battery" id="battery" checked>
+            <label for="battery">Аккумуляторные</bosch>
+          </li>
+          <li class="filter-option">
+            <input class="filter-input filter-input-radiobutton" type="radio" name="electric-network" id="electric-network">
+            <label for="electric-network">Сетевые</label>
+          </li>
+        </fieldset>
+        <button type="submit" class="next-button">Показать</button>
     </section>
+
     <section class="catalog">
-      <div>
-        <h2 class="visually-hidden">Сортировка:</h2>
+      <div class="sorting">
+        <h2 class="filter-title">Сортировка:</h2>
         <button name="price">По цене</button>
         <button name="type">По типу</button>
         <button name="function">По функционалу</button>
       </div>
         <h2 class="visually-hidden">Перечень перфораторов</h2>
+        <div class="catalog-items">
         <article class="catalog-item">
-          <img src="img/item-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000">
+          <div class="image"><img src="img/item-3000.jpg" width="218" height="170" alt="Перфоратор BOSCH BFG 3000"></div>
           <h3>
-            <a class="catalog-category" href="catalog-item.html"> Перфоратор BOSCH <span>BFG 3000</span></a>
+            <a class="catalog-category" href="catalog-item.html">Перфоратор BOSCH<span>BFG 3000</span></a>
           </h3>
           <div class="image-hover">
             <a class="button-buy" href="#">Купить</a>
@@ -209,15 +254,25 @@
             <b>12500 ₽</b>
           </div>
         </article>
+      </div>
         <ul class="pagination-list">
           <li class="pagination-item"><a>1</a></li>
           <li class="pagination-item"><a href="#">2</a></li>
           <li class="pagination-item"><a href="#">3</a></li>
-          <li class="pagination-item"><a href="#">Следующая</a></li>
+          <li class="pagination-item next-button"><a href="#">Следующая</a></li>
         </ul>
       </section>
+</div>
     </main>
-
+    <div class="perforator-footer"
+    <article class="perforator-info">
+      <h2 class="perforator-title">ПАРА СЛОВ О ПЕРФОРАТОРАХ</h2>
+      <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления
+        отверстий в кирпиче, бетоне и камне.<br> Существуют электромеханические и пневматические перфораторы.
+        Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду
+        есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
+    </article>
+    </div>
     <footer class="site-footer">
       <div class="footer-top">
         <a class="logo" href="index.html"><img src="img/logo.svg" alt="Логотип Техномарта" width="109" height="19"> </a>
