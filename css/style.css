@@ -1007,19 +1007,21 @@ text-decoration: none;
 
 .write-textarea {
   margin-top: 13px;
+  margin-bottom: 30px;
 }
 
 .button-modal {
   width: 100%;
-
-
+  padding-left: 80px;
+  padding-right: 80px;
 }
 
 .form-button-footer {
   background-color: #f4f4f4;
   width: 620px;
   min-height: 112px;
-  margin: 0 auto;
+  margin-left: -80px;
+
 }
 .basket-modal {
   display: none;
