@@ -52,27 +52,30 @@
     </nav>
   </header>
 
-  <main class="container">
+  <main>
+  <div class="container">
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества магазина</h2>
       <ul class="advantages-list">
-        <li class="materials">Материалы <a  href="#">на любой вкус</a></li>
-         <li class="instrument">Инструмент <a  href="#">на все случаи</a></li>
-         <li class="technique">Техника <a  href="#">для стройки</a></li>
+        <li class="materials">Материалы <a class="button-advantages materials-button" href="#">на любой вкус</a></li>
+         <li class="instrument">Инструмент <a class="button-advantages instrument-button" href="#">на все случаи</a></li>
+         <li class="technique">Техника <a class="button-advantages technique-button" href="#">для стройки</a></li>
          <li class="drill"> Дрели
            <p>Соседям на радость!</p>
            <a class="button" href="#">Открыть каталог</a></li>
          <li сlass="perforator">Перфораторы
            <p>Настоящие мужские игрушки</p>
            <a class="button" href="#">Открыть каталог</a></li>
-         <li class="discount">Скидки 50% <a href="#">на 350 товаров</a></li>
-         <li class="delivery-advantages">Доставка <a  href="#">бесплатно</a></li>
+         <ul class="advantages-group">
+         <li class="discount">Скидки 50% <a class="button-advantages discount-button" href="#">на 350 товаров</a></li>
+         <li class="delivery-advantages">Доставка <a class="button-advantages delivery-button" href="#">бесплатно</a></li>
+       </ul>
       </ul>
     </section>
 
     <section class="popular-goods">
       <div class="popular-wrapper">
-        <h2 class="popular-title">Популярные товары:</h2>
+        <h2 class="heading-site popular-title">Популярные товары:</h2>
         <a class="button goods-button" href="#">Все популярные товары:</a>
       </div>
       <article class="goods-items">
@@ -133,33 +136,67 @@
 
       <section class="producers-section">
         <div class="popular-wrapper">
-          <h2 class="popular-title">Популярные производители:</h2>
+          <h2 class="heading-site popular-title">Популярные производители:</h2>
           <a class="button producers-button" href="#">Все производители:</a>
         </div>
         <ul class="producers">
-          <li><img src="img/logos/bosch.jpg" width="126" height="37" alt="Bosch"></li>
-           <li><img src="img/logos/makita.jpg" width="123" height="40" alt="Makita"></li>
-           <li><img src="img/logos/de-walt.jpg" width="146" height="44" alt="DeWalt"></li>
-           <li><img src="img/logos/interskol.jpg" width="200" height="88" alt="Интерскол"></li>
-           <li><img src="img/logos/hitachi.jpg" width="169" height="31" alt="Hitachi"></li>
-           <li><img src="img/logos/lg.jpg" width="121" height="73" alt="LG"></li>
-           <li><img src="img/logos/aeg.jpg" width="151" height="96" alt="AEG"></li>
-           <li><img src="img/logos/metabo.jpg" width="204" height="69" alt="Metabo"></li>
+          <li class="bosch-logo"><img src="img/logos/bosch.jpg" width="126" height="37" alt="Bosch"></li>
+           <li class="makita-logo"><img src="img/logos/makita.jpg" width="123" height="40" alt="Makita"></li>
+           <li class="de-walt-logo"><img src="img/logos/de-walt.jpg" width="146" height="44" alt="DeWalt"></li>
+           <li class="interskol-logo"><img src="img/logos/interskol.jpg" width="200" height="88" alt="Интерскол"></li>
+           <li class="hitachi-logo"><img src="img/logos/hitachi.jpg" width="169" height="31" alt="Hitachi"></li>
+           <li class="lg-logo"><img src="img/logos/lg.jpg" width="121" height="73" alt="LG"></li>
+           <li class="aeg-logo"><img src="img/logos/aeg.jpg" width="151" height="96" alt="AEG"></li>
+           <li class="metabo-logo"><img src="img/logos/metabo.jpg" width="204" height="69" alt="Metabo"></li>
         </ul>
       </section>
+    </div>
 
       <section class="services">
-        <h2 class="services-title">Сервисы</h2>
-        <p> Хороший интернет-магазин отличается от плохого не только ценами!
-          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
-        <ul class="services-buttons-list">
-          <li><a class="services-buttons-active" href="#">Доставка</a></li>
-          <li><a class="services-buttons" href="#">Гарантия</a></li>
-          <li><a class="services-buttons" href="#">Кредит</a></li>
-        <ul>
-          <h2 class="services-delivery">Доставка</h2>
-          <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-             Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+        <div class="services-wrapper">
+          <div class="services-part">
+            <h2 class="heading-site services-title">Сервисы</h2>
+            <p> Хороший интернет-магазин отличается от плохого не только ценами!
+                Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.</p>
+          </div>
+          <div class="services-slider-delivery">
+            <ul class="services-buttons-list">
+              <li><a class="services-buttons-active" href="#">Доставка</a></li>
+              <li><a class="services-buttons" href="#">Гарантия</a></li>
+              <li><a class="services-buttons" href="#">Кредит</a></li>
+            </ul>
+            <div class="delivery-part">
+              <h2 class="heading-site services-delivery-title">Доставка</h2>
+              <p>Мы с удовольствием доставим ваш товар прямо<br> к вашему подъезду совершенно бесплатно!<br>
+               Ведь мы неплохо заработаем,<br> поднимая его на ваш этаж!</p>
+            </div>
+          </div>
+          <div class="services-slider-garanty">
+            <ul class="services-buttons-list">
+              <li><a class="services-buttons" href="#">Доставка</a></li>
+              <li><a class="services-buttons-active" href="#">Гарантия</a></li>
+              <li><a class="services-buttons" href="#">Кредит</a></li>
+            </ul>
+            <div class="garanty-part">
+              <h2 class="heading-site services-delivery-title">Гарантия</h2>
+              <p>Если купленный у нас товар поломается или заискрит,<br> а также в случае пожара, спровоцированного
+                его возгаранием,<br>  вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
+                сгоревший товар на новый.<br> Дом уж восстановите как-нибудь сами.</p>
+            </div>
+          </div>
+          <div class="services-slider-credit">
+            <ul class="services-buttons-list">
+              <li><a class="services-buttons" href="#">Доставка</a></li>
+              <li><a class="services-buttons" href="#">Гарантия</a></li>
+              <li><a class="services-buttons-active" href="#">Кредит</a></li>
+            </ul>
+            <div class="credit-part">
+              <h2 class="heading-site services-delivery-title">Кредит</h2>
+              <p>Залезть в долговую яму стало проще!<br>Кредитные консультанты придут вам на помощь.</p>
+              <a class="button credit-button" href="#">Отправить заявку</a>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="company-presentation">

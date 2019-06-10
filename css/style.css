@@ -411,27 +411,139 @@ padding: 20px 35px 25px 30px;
 .main-content {
   display: flex;
   font-family: "PT Sans", Arial, sans-serif;
+  justify-content: space-between;
 }
+
+.advantages-list li {
+  list-style: none;
+}
+ .advantages-list {
+   margin-top: 0;
+   padding-left: 0;
+   margin-right: 0;
+   margin-bottom: 53px;
+   display: flex;
+   flex-wrap: wrap;
+
+   font-size: 24px;
+  font-weight: bold;
+  line-height: 1.25;
+  text-align: left;
+  color: #ffffff;
+}
+
+.materials,
+.instrument,
+.technique,
+.discount,
+.delivery-advantages {
+  width: 277px;
+  min-height: 95px;
+  padding-top: 25px;
+  padding-left: 23px;
+  position: relative;
+}
+.advantages-group {
+
+}
+
+.materials {
+  background-color: #ffbf47;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.instrument {
+  background-color: #3bbce3;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.technique {
+  background-color: #dc91d8;
+  margin-bottom: 20px;
+}
+
+.discount {
+background-color: #8ed78f;
+margin-bottom: 20px;
+}
+
+.delivery-advantages {
+  background-color: #ffc047;
+}
+
+.button-advantages {
+  position: absolute;
+  top: 63px;
+  left: 25px;
+  width: 111px;
+  height: 24px;
+  opacity: 0.1;
+  background-color: #000000;
+}
+
+.materials a,
+.instrument a,
+.technique a,
+.discount a,
+.delivery-advantages a {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.29;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 2px;
+  padding-top: 10px;
+  padding-left: 24px;
+  padding-bottom: 5px;
+  padding-right: 24px;
+  display: block;
+  margin-top: 0;
+  margin-bottom: 0;
+
+}
+.drill {
+  background-image: url(img/slider-image1.jpg);
+}
+
+
+
+.producers {
+padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+.producers li {
+  list-style: none;
+  width: 220px;
+margin-bottom: 20px;
+text-align: center;
+}
+
+
 
 
 
 
 
 .company-presentation {
+  width: 940px;
+  margin: 0 auto;
   display: flex;
-  /*width: 540px;*/
   justify-content: space-between;
   margin-top: 45px;
+
 }
 
 .main-contacts {
   width: 300px;
 }
-
-
-
-
-
 
 .features {
   width: 520px;
@@ -516,13 +628,210 @@ padding-bottom: 0;
   color: #000000;
 
 }
+.heading-site {
+background-color: #f2f6f8;
+font-size: 30px;
+  line-height: 1;
+  text-align: left;
+  color: #32425c;
+  padding-top: 32px;
+  padding-bottom: 34px;
+  padding-left: 30px;
+  font-weight: normal;
+text-transform: uppercase;
+margin-top: 0;
+margin-bottom: 0;
+}
+
+.popular-title {
+  background-color: #f9f5f0;
+  position: relative;
+}
+.goods-button {
+  width: 253px;
+  position: absolute;
+  top: 835px;
+  right: 200px;
+  padding-left: 55px;
+  box-sizing: border-box;
+}
+
+.producers-button {
+  position: absolute;
+  width: 253px;
+  top: 1665px;
+  right: 200px;
+  padding-left: 70px;
+  box-sizing: border-box;
+}
+
+.bosch-logo {
+  padding-top: 53px;
+  padding-bottom: 55px;
+  box-sizing: border-box;
+}
+
+.makita-logo {
+  padding-top: 50px;
+  padding-bottom: 55px;
+  box-sizing: border-box;
+}
+
+.de-walt-logo {
+  padding-top: 48px;
+  padding-bottom: 53px;
+  box-sizing: border-box;
+}
+
+.interskol-logo {
+  padding-top: 21px;
+  padding-bottom: 36px;
+  box-sizing: border-box;
+}
+
+.hitachi-logo {
+  padding-top: 58px;
+  padding-bottom: 56px;
+  box-sizing: border-box;
+}
+
+.lg-logo {
+  padding-top: 35px;
+  padding-bottom: 37px;
+  box-sizing: border-box;
+}
+
+.aeg-logo {
+  padding-top: 23px;
+  padding-bottom: 26px;
+  box-sizing: border-box;
+}
+
+.metabo-logo {
+  padding-top: 34px;
+  padding-bottom: 42px;
+  box-sizing: border-box;
+}
+
+.services {
+  width: 100%;
+  background-color: #f4f7f9;
+}
+
+.services-wrapper {
+  width: 940px;
+  margin: 0 auto;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.85;
+  text-align: left;
+
+}
+.services-part {
+  display: block;
+  width: 398px;
+  margin-bottom: 74px;
+}
+
+.services-part p,
+.delivery-part p {
+  margin-top: 0;
+}
+.services-title {
+  color: #000000;
+  font-family: Cuprum, Arial, sans-serif;
+  font-weight: normal;
+  padding-top: 68px;
+  padding-left: 0;
+}
+.services-delivery-title {
+  font-family: Cuprum, Arial, sans-serif;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 1;
+  padding-top: 0;
+
+}
+.services-slider-delivery,
+.services-slider-garanty,
+.services-slider-credit {
+  display: flex;
+}
+
+.credit-button {
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.29;
+  text-align: center;
+  color: #ffffff;
+  width: 195px;
+
+}
+
+.services-buttons-list {
+  padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 80px;
+}
+.services-buttons-list li {
+  list-style: none;
+}
+
+.services-buttons {
+  background-color: #32425c;
+  padding-top: 21px;
+  padding-bottom: 20px;
+  padding-left: 23px;
+
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.43;
+  text-align: left;
+
+  display: block;
+  width: 240px;
+
+}
+
+.services-buttons-active {
+  box-shadow: 0px 1px 0 0 #ffffff, inset 0px 1px 0 0 #ffffff;
+  background-color: #ffffff;
+  color: #32425c;
+  padding-top: 21px;
+  padding-bottom: 20px;
+  padding-left: 23px;
+
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.43;
+  text-align: left;
+  display: block;
+  width: 240px;
+}
+
+
+
+.delivery-part,
+.garanty-part,
+.credit-part {
+  width: 379px;
+  display: block;
+}
+
+
+
+
+
 .filters {
 width: 220px;
 
 }
 
-.filter-title {
-  width: 53px;
+.filter-title,
+.sorting-title {
+  width: 220px;
   font-size: 13px;
   line-height: 1.38;
   text-align: left;
@@ -531,6 +840,8 @@ width: 220px;
   padding-bottom: 15px;
   padding-left: 20px;
   margin: 0;
+  font-weight: normal;
+  text-transform: uppercase;
 }
 
 .filter-name {
@@ -542,6 +853,8 @@ width: 220px;
   padding-top: 20px;
   padding-bottom: 20px;
   margin: 0;
+  text-transform: uppercase;
+
 }
 .marks {
   display: flex;
@@ -562,6 +875,12 @@ width: 220px;
 
 .producers-fieldset {
   margin-bottom: 50px;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.food-fieldset{
+  padding-left: 0;
 }
 .filter-option {
   font-size: 15px;
@@ -590,41 +909,47 @@ width: 220px;
   margin-top: 75px;
 }
 
+.catalog {
+  margin-left: 20px;
+}
 .sorting {
   display: flex;
   width: 700px;
   background-color: #f7f3ec;
+  justify-content: space-between;
 
 }
-.sorting button {
+.sorting a {
   font-size: 13px;
   font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
   line-height: 1.38;
-  letter-spacing: normal;
   text-align: left;
   color: rgba(0, 0, 0, 0.3);
   border: none;
-  text-decoration: underline #ee3643;
+  text-decoration: underline dotted #ee3643;
   background-color: #f7f3ec;
   padding-bottom: 0;
+  text-transform: uppercase;
+  justify-content: space-between;
+  padding-top: 14px;
+  display: block;
 }
 
-.sorting button:active {
+.sorting a:focus {
 text-decoration: none;
+color: #ee3643;
 }
 
 .catalog-items {
-  width: 700px;
   margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .catalog-item {
   position: relative;
-  display: inline-block;
   width: 218px;
-  margin-right: 20px;
   margin-bottom: 20px;
 
   line-height: 20px;
@@ -753,20 +1078,24 @@ text-decoration: none;
 
 
 .perforator-footer {
-  width: 100%;
-  background-color: #f4f7f9;
+width: 940px;
+margin: 0 auto;
+
 
 }
 .perforator-info {
-  width: 940px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+  background-color: #f4f7f9;
 }
+
 .perforator-title {
   font-size: 30px;
   line-height: 1;
   font-weight: 400;
+  text-transform: uppercase;
 }
 
 .perforator-info p {
@@ -775,6 +1104,7 @@ text-decoration: none;
   line-height: 1.85;
   text-align: left;
   color: #000000;
+  text-align: justify;
 }
 
 
@@ -960,6 +1290,8 @@ text-decoration: none;
   border-top: 7px solid #ee3643;
   padding-left: 80px;
   padding-right: 80px;
+  padding-top: 0px;
+  display: none;
 }
 .write-us h2 {
   font-size: 0;
@@ -1000,20 +1332,24 @@ text-decoration: none;
   line-height: 1.38;
   text-align: left;
   color: #a9a9a9;
-  width: 90%;
+  width: 100%;
   margin-top: 13px;
   justify-content: space-between;
+  min-height: 38px;
+  box-sizing: border-box;
 }
 
 .write-textarea {
   margin-top: 13px;
   margin-bottom: 30px;
+  box-sizing: border-box;
 }
 
 .button-modal {
-  width: 420px;
+  width: 460px;
   padding-left: 80px;
   padding-right: 80px;
+  margin-left: 80px;
 }
 
 .form-button-footer {
