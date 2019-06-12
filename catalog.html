@@ -34,6 +34,9 @@
       </div>
       <div class="user-profile">
         <div class="user-line1">
+          <svg>
+            <use x-link:href="icon-user"></use>
+          </svg>
           <a class="userpic" href="user-profile">Равшан Джамшутович</a>
           <a class="exit" href="sign-in">Выйти</a>
         </div>
@@ -67,13 +70,18 @@
     <section class="filters">
       <h2 class="filter-title">Фильтр:</h2>
       <form class="price-form" action="#" method="post">
-        <label class="filter-name" for="range">Цена:</label>
-        <input type="range" id="range" min=0 max=30000 value="цена">
+        <fieldset class="price-fieldset">
+        <legend class="filter-name">Цена:</legend>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
         <div class="marks">
-          <span>0</span>
-          <span>30000</span>
+          <input type="text" name="min-price" value="0">
+          <span>-</span>
+          <input type="text" name="max-price" value="30000"</span>
         </div>
-      </form>
+
 
         <fieldset class="producers-fieldset">
           <legend class="filter-name">Производители:</legend>
@@ -112,6 +120,7 @@
           </li>
         </fieldset>
         <button type="submit" class="next-button">Показать</button>
+      </form>
     </section>
 
     <section class="catalog">
@@ -256,23 +265,24 @@
         </article>
       </div>
         <ul class="pagination-list">
-          <li class="pagination-item"><a>1</a></li>
+          <li class="pagination-item-active pagination-item"><a>1</a></li>
           <li class="pagination-item"><a href="#">2</a></li>
           <li class="pagination-item"><a href="#">3</a></li>
           <li class="pagination-item next-button"><a href="#">Следующая</a></li>
         </ul>
       </section>
-</div>
-    </main>
-    <article class="perforator-info">
-      <div class="perforator-footer">
-      <h2 class="perforator-title">Пара слов о перфораторах</h2>
-      <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления
+   </div>
+</main>
+
+<div class="perforator-footer">
+  <article class="perforator-info">
+    <h2 class="perforator-title">Пара слов о перфораторах</h2>
+    <p>Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления
         отверстий в кирпиче, бетоне и камне. Существуют электромеханические и пневматические перфораторы.
         Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В ассортиментном ряду
         есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.</p>
-      </div>
-    </article>
+  </article>
+</div>
 
     <footer class="site-footer">
       <div class="footer-top">
