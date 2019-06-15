@@ -83,10 +83,39 @@
   </header>
   <main class="container">
     <ul class="breadcrumbs">
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="catalog.html">Каталог</a></li>
-      <li><a href="#">Инструмент</a></li>
-      <li><a class="breadcrumbs-current">Перфораторы</a></li>
+      <li><a href="index.html">
+        <div class="home-icon"><svg xmlns="http://www.w3.org/2000/svg" width="15" height="12" viewBox="0 0 15 12">
+          <g fill="#C1C6CE">
+                <path d="M3 8v4h4V8h2v4h4V8L8 3.516z"/>
+                <path d="M14.831 6.365L13 4.751V0h-2v2.987L8.332.635c-.02-.017-.043-.023-.064-.037a.465.465 0 0 0-.08-.047.551.551 0 0 0-.095-.024C8.062.521 8.032.515 8 .515c-.031 0-.061.006-.092.012a.46.46 0 0 0-.095.025c-.028.011-.053.029-.08.046-.021.014-.045.02-.064.037l-6.498 5.73a.501.501 0 0 0 .33.875.497.497 0 0 0 .331-.125L8 1.677l6.169 5.438a.501.501 0 0 0 .662-.75z"/>
+            </g>
+        </svg></div>
+        <span class="visually-hidden">Главная</span></a>
+      </li>
+      <li>
+        <div class="breadcrumbs-arrows">
+          <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12">
+            <path fill="#C1C6CE" d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z"/>
+          </svg>
+        </div>
+        <a href="catalog.html">Каталог</a>
+      </li>
+      <li>
+        <div class="breadcrumbs-arrows">
+          <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12">
+            <path fill="#C1C6CE" d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z"/>
+          </svg>
+        </div>
+        <a href="#">Инструмент</a>
+      </li>
+      <li>
+        <div class="breadcrumbs-arrows">
+          <svg xmlns="http://www.w3.org/2000/svg" width="8" height="12" viewBox="0 0 8 12">
+            <path fill="#C1C6CE" d="M7.237 5.642L1.729.133a.506.506 0 1 0-.716.716L6.163 6l-5.151 5.15a.507.507 0 0 0 .716.717l5.509-5.509a.504.504 0 0 0 0-.716z"/>
+          </svg>
+        </div>
+        <a class="breadcrumbs-current">Перфораторы</a>
+      </li>
     </ul>
     <h1 class="heading-site">Перфораторы</h1>
     <div class="main-content">
@@ -95,10 +124,18 @@
       <form class="price-form" action="#" method="post">
         <fieldset class="price-fieldset">
           <legend class="filter-name">Цена:</legend>
-          <span></span>
-          <span></span>
-          <span></span>
-          <span></span>
+          <span class="price-range">
+              <svg xmlns="http://www.w3.org/2000/svg" width="180" height="23" viewBox="0 0 20 23">
+                <path fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z" opacity=".3"/>
+                <circle cx="10" cy="10" r="10" fill="#FFF"/>
+                <circle cx="10" cy="10" r="2" fill="#ABABAB"/>
+                <line x1="10" y1="10" x2="162" y2="10" stroke="#00ca74" stroke-width="2"/>
+                <path fill="#ABABAB" d="M10 20C4.477 20 0 15.522 0 10v2c0 5.522 4.477 10 10 10 5.522 0 10-4.478 10-10v-2c0 5.522-4.478 10-10 10z" opacity=".3"/>
+                <circle cx="162" cy="10" r="10" fill="#FFF"/>
+                <circle cx="162" cy="10" r="2" fill="#ABABAB"/>
+                <line x1="162" y1="10" x2="180" y2="10" stroke="#d7dcde" stroke-width="2"/>
+              </svg>
+          </span>
           <div class="marks">
             <input type="text" name="min-price" value="0">
             <span>-</span>
@@ -111,36 +148,36 @@
           <legend class="filter-name">Производители:</legend>
           <ul class="producers-list">
             <li class="filter-option">
-              <input class="filter-input filter-input-checkbox" type="checkbox" name="bosch" id="bosch" checked>
+              <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="bosch" id="bosch" checked>
               <label for="bosch">Bosch</label>
             </li>
             <li class="filter-option">
-              <input class="filter-input filter-input-checkbox" type="checkbox" name="interscol" id="interskol">
+              <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" name="interscol" id="interskol">
               <label for="interskol">Интерскол</label>
             </li>
             <li class="filter-option">
-              <input class="filter-input filter-input-checkbox" type="checkbox" id="makita" checked>
+              <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" id="makita" checked>
               <label for="interskol">Makita</label>
             </li>
             <li class="filter-option">
-              <input class="filter-input filter-input-checkbox" type="checkbox" id="dewalt">
+              <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" id="dewalt">
               <label for="dewalt">Dewalt</label>
             </li>
             <li class="filter-option">
-              <input class="filter-input filter-input-checkbox" type="checkbox" id="hitachi">
+              <input class="filter-input filter-input-checkbox visually-hidden" type="checkbox" id="hitachi">
               <label>Hitachi</label>
           </ul>
         </fieldset>
 
-        <fieldset class="food-fieldset">
+        <fieldset class="power-fieldset">
           <legend class="filter-name">Питание:</legend>
-          <ul class="food-list">
+          <ul class="power-list">
             <li class="filter-option">
-              <input class="filter-input filter-input-radiobutton" type="radio" name="battery" id="battery" checked>
+              <input class="filter-input filter-input-radiobutton" type="radio" name="power" id="battery" checked>
               <label for="battery">Аккумуляторные</label>
             </li>
             <li class="filter-option">
-              <input class="filter-input filter-input-radiobutton" type="radio" name="electric-network" id="electric-network">
+              <input class="filter-input filter-input-radiobutton" type="radio" name="power" id="electric-network">
               <label for="electric-network">Сетевые</label>
             </li>
           </ul>
@@ -155,6 +192,16 @@
         <a href="#" name="price">По цене</a>
         <a href="#" name="type">По типу</a>
         <a href="#" name="function">По функционалу</a>
+        <a class="sorting-arrow" href="#" name="up-arrow">
+          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+              <path fill="#c5c5c5" d="M5.5 0L0 10h11z"/>
+          </svg>
+        </a>
+        <a class="sorting-arrow" href="#" name="down-arrow">
+          <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10" viewBox="0 0 11 10">
+              <path fill="#c5c5c5" d="M5.5 10L0 0h11"/>
+          </svg>
+        </a>
       </div>
         <h2 class="visually-hidden">Перечень перфораторов</h2>
         <div class="catalog-items">
@@ -334,12 +381,30 @@
         </ul>
       </div>
       <div class="footer-bottom">
-        <p class="footer-copyright">2010–2019 Компания «Техномарт»<br>
+        <p class="footer-copyright"> &copy; 2010–2019 Компания «Техномарт»<br>
         Все права защищены</p>
-        <ul>
-          <li><a class="social-button vk" href="#">Вконтакте</a></li>
-          <li><a class="social-button facebook" href="#">Фейсбук</a></li>
-          <li><a class="social-button instagram" href="#">Инстаграмм</a></li>
+        <ul class="social-buttons">
+          <li><a class="social-button vk" href="#">
+                <span class="visually-hidden">Вконтакте</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="15" viewBox="0 0 26 15">
+                <path fill="#FFF" d="M16.138 11.51c.956-.309 2.18 2.04 3.483 2.939.978.681 1.727.534 1.727.534l3.473-.05s1.815-.112.957-1.554c-.071-.12-.503-1.069-2.585-3.022-2.177-2.043-1.882-1.712.739-5.244 1.597-2.153 2.236-3.468 2.036-4.028-.192-.539-1.365-.399-1.365-.399L20.69.713c-.381.001-.704.119-.851.515-.003.004-.621 1.666-1.445 3.079-1.741 2.989-2.436 3.148-2.724 2.961-.661-.433-.494-1.737-.494-2.664 0-2.897.432-4.105-.846-4.417-.427-.104-.739-.172-1.828-.182-1.392-.021-2.574 0-3.244.329-.445.223-.786.712-.579.74.26.035.843.16 1.155.586.401.552.389 1.789.389 1.789s.229 3.411-.54 3.834c-.528.29-1.25-.302-2.803-3.016-.793-1.388-1.392-2.922-1.392-2.922s-.116-.285-.326-.441c-.25-.185-.6-.244-.6-.244L.848.684S.29.7.085.946c-.182.218-.015.668-.015.668s2.909 6.881 6.203 10.347c3.02 3.182 6.452 2.971 6.452 2.971h1.555s.469-.054.709-.312c.224-.24.214-.691.214-.691s-.031-2.109.935-2.419z"/>
+                </svg>
+              </a>
+          </li>
+          <li><a class="social-button facebook" href="#">
+                <span class="visually-hidden">Фейсбук</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="12" height="22" viewBox="0 0 12 22">
+                    <path fill="#FFF" d="M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"/>
+                </svg>
+               </a>
+          </li>
+          <li><a class="social-button instagram" href="#">
+                <span class="visually-hidden">Инстаграмм</span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21">
+                    <path fill="#FFF" d="M18 0H3C1.35 0 0 1.35 0 3v15c0 1.65 1.35 3 3 3h15c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zm-7.5 7c1.93 0 3.5 1.57 3.5 3.5S12.43 14 10.5 14 7 12.43 7 10.5 8.57 7 10.5 7zM18 18H3V9h1.181A6.504 6.504 0 0 0 4 10.5a6.5 6.5 0 1 0 13 0 6.45 6.45 0 0 0-.181-1.5H18v9zm0-11h-4V3h4v4z"/>
+                </svg>
+               </a>
+          </li>
         </ul>
         <p class="footer-feedback">Обратная связь:<br>
           <a class="contact-htmlacademy" href="#"> mail@htmlacademy.ru</a></p>

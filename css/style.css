@@ -663,7 +663,7 @@ margin-bottom: 20px;
 }
 
 .slider-item {
-  /*display: none;*/
+  background-color: #32425c;
 }
 
 .slider-item:nth-child(1) {
@@ -846,7 +846,7 @@ padding-bottom: 0;
 }
 .breadcrumbs li {
   list-style: none;
-  padding-left: 40px;
+  /*padding-left: 40px;*/
 }
 
 .breadcrumbs a {
@@ -856,7 +856,16 @@ padding-bottom: 0;
   line-height: 1.38;
   text-align: left;
   color: #000000;
+  display: inline-block;
+  text-transform: uppercase;
+}
 
+.home-icon svg {
+  padding-right: 15px;
+}
+
+.breadcrumbs-arrows {
+  padding-left: 15px;
 }
 .heading-site {
 background-color: #f2f6f8;
@@ -1118,6 +1127,13 @@ width: 220px;
   text-transform: uppercase;
 
 }
+
+.price-range {
+  background-color: #f7f3ec;
+  width: 220px;
+  height: 80px;
+  padding-left: 0;
+}
 .marks {
   display: flex;
   width: 220px;
@@ -1137,7 +1153,7 @@ width: 220px;
 
 .price-fieldset,
 .producers-fieldset,
-.food-fieldset {
+.power-fieldset {
   border: none;
   padding: 0;
 }
@@ -1147,7 +1163,7 @@ width: 220px;
   padding-left: 0;
 }
 
-.food-fieldset{
+.power-fieldset{
   padding-left: 0;
 }
 .filter-option {
@@ -1163,7 +1179,7 @@ width: 220px;
 }
 
 .producers-list,
-.food-list {
+.power-list {
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
@@ -1175,6 +1191,30 @@ width: 220px;
   background-color: #ffffff;
   border-radius: 2px;
   margin-top: 75px;
+}
+
+.filter-option label {
+  position: relative;
+  padding: 35px;
+}
+.filter-input-checkbox + label::before {
+  content: "";
+  width: 35px;
+  background-image: url(../img/icons/checkbox-off.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  position: absolute;
+  display: inline-block;
+  z-index: 2;
+}
+
+.filter-input-checkbox:checked + label::before {
+  content: "";
+  width: 35px;
+  background-image: url(../img/icons/checkbox-on.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: 2;
 }
 
 .catalog {
@@ -1206,6 +1246,14 @@ width: 220px;
 .sorting a:focus {
 text-decoration: none;
 color: #ee3643;
+}
+
+.sorting-arrow:hover svg path {
+  fill: #231F20;
+}
+
+.sorting-arrow:active svg path {
+  fill: #ee3643;
 }
 
 .catalog-items {
