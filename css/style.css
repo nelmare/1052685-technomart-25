@@ -1441,6 +1441,29 @@ width: 220px;
   height: 23px;
 }
 
+.filter-input-radiobutton + label::before {
+  content: "";
+  width: 35px;
+  background-image: url("../img/icons/radio-off.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: 2;
+  display: inline-block;
+  height: 25px;
+}
+
+.filter-input-radiobutton:checked + label::before {
+  content: "";
+  width: 35px;
+  background-image: url("../img/icons/radio-on.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: 2;
+  display: inline-block;
+  height: 25px;
+}
+
+
 .catalog {
   margin-left: 20px;
 }
