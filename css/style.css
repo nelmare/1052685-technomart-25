@@ -1428,6 +1428,7 @@ width: 220px;
   display: inline-block;
   z-index: 2;
   height: 23px;
+  vertical-align: middle;
 }
 
 .filter-input-checkbox:checked + label::before {
@@ -1439,6 +1440,7 @@ width: 220px;
   z-index: 2;
   display: inline-block;
   height: 23px;
+  vertical-align: middle;
 }
 
 .filter-input-radiobutton + label::before {
@@ -1450,6 +1452,7 @@ width: 220px;
   z-index: 2;
   display: inline-block;
   height: 25px;
+  vertical-align: middle;
 }
 
 .filter-input-radiobutton:checked + label::before {
@@ -1461,6 +1464,7 @@ width: 220px;
   z-index: 2;
   display: inline-block;
   height: 25px;
+  vertical-align: middle;
 }
 
 
