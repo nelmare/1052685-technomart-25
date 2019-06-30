@@ -1,6 +1,6 @@
-/*{
+*{
   outline: 1px solid red;
-}*/
+}
 
 body {
   margin: 0;
@@ -886,83 +886,7 @@ margin-bottom: 20px;
 text-align: center;
 }
 
-.company-presentation {
-  width: 940px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  margin-top: 45px;
 
-}
-
-.main-contacts {
-  width: 300px;
-}
-
-.features {
-  width: 520px;
-  margin-top: 0;
-}
-.features-title,
-.main-contacts-title {
-  font-size: 30px;
-  line-height: 1;
-  text-transform: uppercase;
-}
-
-.features p,
-.main-contacts p {
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 13px;
-  line-height: 1.85;
-  margin-top: 36px;
-  margin-bottom: 0;
-}
-
-.main-contacts img {
-  margin-top: 36px;
-  vertical-align: bottom;
-}
-
-.delivery-companies {
-  padding-left: 0;
-  margin-top: 23px;
-  margin-bottom: 0;
-}
-.delivery-companies li {
-  font-size: 18px;
-  line-height: 1.11;
-  list-style: none;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: 0px;
-  padding-bottom: 18px;
-  position: relative;
-  }
-
-.delivery-companies li:last-of-type {
-padding-bottom: 0;
-}
-
-.delivery-companies li svg {
-  width: 25px;
-  height: 2px;
-  vertical-align: middle;
-  padding-right: 11px;
-}
-
-
-.button-company {
-  padding-left: 40px;
-  padding-right: 40px;
-  margin-top: 40px;
-}
-
-.button-write {
-  padding-left: 61px;
-  padding-right: 62px;
-  margin-top: 45px;
-}
 
 .popular-title {
   background-color: #f9f5f0;
@@ -1193,6 +1117,99 @@ padding-bottom: 0;
   display: block;
   width: 240px;
 }
+
+.services-buttons:hover:not(.services-buttons-active) {
+  background-color: #293449;
+}
+
+.services-buttons:active {
+  background-color: #ffffff;
+  color: #32425c;
+}
+
+.company-presentation {
+  width: 940px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 45px;
+
+}
+
+.main-contacts {
+  width: 300px;
+}
+
+.features {
+  width: 520px;
+  margin-top: 0;
+}
+.features-title,
+.main-contacts-title {
+  font-size: 30px;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.features p,
+.main-contacts p {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.85;
+  margin-top: 36px;
+  margin-bottom: 0;
+}
+
+.main-contacts img {
+  margin-top: 36px;
+  vertical-align: bottom;
+}
+
+.delivery-companies {
+  padding-left: 0;
+  margin-top: 23px;
+  margin-bottom: 0;
+}
+.delivery-companies li {
+  font-size: 18px;
+  line-height: 1.11;
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0px;
+  padding-bottom: 18px;
+  position: relative;
+  }
+
+.delivery-companies li:last-of-type {
+padding-bottom: 0;
+}
+
+.delivery-companies li::before {
+  content: "";
+
+  width: 25px;
+  height: 2px;
+
+  border-color: #ee3643;
+
+  vertical-align: middle;
+  padding-right: 11px;
+}
+
+
+.button-company {
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-top: 40px;
+}
+
+.button-write {
+  padding-left: 61px;
+  padding-right: 62px;
+  margin-top: 45px;
+}
+
 
 .breadcrumbs {
   display: flex;
@@ -1916,7 +1933,7 @@ margin: 0 auto;
   margin: 0 auto;
   width: 940px;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .footer-navigation {
@@ -1929,16 +1946,6 @@ margin: 0 auto;
 
 .footer-navigation li {
   margin-left: 50px;
-}
-
-.footer-navigation a:hover,
-.footer-products a:hover {
-  text-decoration: underline;
-}
-
-.footer-navigation a:active,
-.footer-products a:active {
-  opacity: 50%;
 }
 
 .footer-middle {
@@ -1961,6 +1968,7 @@ margin: 0 auto;
 
 .footer-products {
   display: flex;
+  align-items: flex-end;
 }
 
 .footer-products li {
@@ -1969,6 +1977,7 @@ margin: 0 auto;
   margin-bottom: 0;
   padding-left: 0;
 }
+
 .footer-bottom {
   width: 100%;
   background-color: #293449;
@@ -2060,6 +2069,23 @@ margin: 0 auto;
 .footer-products a,
 .contact-htmlacademy {
   color: #ffd180;
+}
+
+.footer-navigation a:hover,
+.footer-products a:hover,
+.contact-htmlacademy:hover {
+  text-decoration: underline;
+}
+
+.footer-navigation a:active,
+.footer-products a:active {
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.contact-htmlacademy:active {
+  color: #ee3643;
+  text-decoration: none;
 }
 
 .modal {
