@@ -1176,9 +1176,10 @@ text-align: center;
   list-style: none;
   margin-top: 0;
   margin-bottom: 0;
-  padding-left: 0px;
+  padding-left: 36px;
   padding-bottom: 18px;
   position: relative;
+
   }
 
 .delivery-companies li:last-of-type {
@@ -1189,12 +1190,16 @@ padding-bottom: 0;
   content: "";
 
   width: 25px;
-  height: 2px;
 
-  border-color: #ee3643;
+  border: 2px solid #ee3643;
 
   vertical-align: middle;
+
+  position: absolute;
+  top: 7px;
+  left: 0px;
   padding-right: 11px;
+  box-sizing: border-box;
 }
 
 
