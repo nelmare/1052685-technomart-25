@@ -1,6 +1,6 @@
-/*{
+*{
   outline: 1px solid red;
-}*/
+}
 
 body {
   margin: 0;
@@ -1377,6 +1377,11 @@ padding: 20px 35px 25px 30px;
   left: 20px;
 }
 
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+  text-decoration: underline;
+}
+
 .filters {
   width: 220px;
   margin-top: 20px;
@@ -1907,6 +1912,7 @@ padding: 20px 35px 25px 30px;
   margin-top: 0;
   margin-bottom: 60px;
   flex-wrap: wrap;
+  cursor: pointer;
 }
 
 .pagination-list li {
@@ -1933,11 +1939,11 @@ padding: 20px 35px 25px 30px;
   cursor: pointer;
 }
 
-.pagination-item {
+.pagination-item a {
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding-top: 10px;
+  padding-bottom: 9px;
   cursor: pointer;
 }
 
@@ -1945,6 +1951,7 @@ padding: 20px 35px 25px 30px;
   padding-top: 11px;
   padding-left: 32px;
   padding-right: 32px;
+  padding-bottom: 8px;
   margin-right: 0;
 }
 
