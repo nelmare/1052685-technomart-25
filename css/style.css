@@ -1,6 +1,6 @@
-*{
+/*{
   outline: 1px solid red;
-}
+}*/
 
 body {
   margin: 0;
@@ -40,6 +40,10 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+
+:focus {
+  outline: 3px solid #ffa247;
 }
 
 .site-header {
@@ -1296,6 +1300,7 @@ padding: 20px 35px 25px 30px;
   padding-left: 0;
   margin: 0;
   flex-wrap: wrap;
+  cursor: pointer;
 }
 
 .breadcrumbs li {
@@ -1313,6 +1318,7 @@ padding: 20px 35px 25px 30px;
   display: inline-block;
   text-transform: uppercase;
   vertical-align: middle;
+
 }
 
 .home-breadcrumbs {
@@ -1403,7 +1409,6 @@ padding: 20px 35px 25px 30px;
   text-transform: uppercase;
 }
 
-
 .price-range {
   background-color: #f7f3ec;
   width: 220px;
@@ -1413,6 +1418,7 @@ padding: 20px 35px 25px 30px;
   margin-bottom: 10px;
   border-radius: 5px;
   position: relative;
+  cursor: pointer;
 }
 
 .circle-left,
@@ -1502,6 +1508,10 @@ padding: 20px 35px 25px 30px;
   padding-bottom: 15px;
 }
 
+.marks span {
+  padding-top: 10px;
+}
+
 .price-fieldset,
 .producers-fieldset,
 .power-fieldset {
@@ -1516,7 +1526,7 @@ padding: 20px 35px 25px 30px;
   padding-left: 0;
 }
 
-.power-fieldset{
+.power-fieldset {
   padding-left: 0;
 }
 
@@ -1552,6 +1562,7 @@ padding: 20px 35px 25px 30px;
   padding-top: 10px;
   padding-bottom: 9px;
 }
+
 .filter-option label {
   position: relative;
 }
@@ -1566,7 +1577,7 @@ padding: 20px 35px 25px 30px;
   z-index: 2;
   height: 23px;
   vertical-align: middle;
-  fill: #c5c5c5;
+  cursor: pointer;
 }
 
 .filter-input-checkbox:checked + label::before {
@@ -1579,6 +1590,7 @@ padding: 20px 35px 25px 30px;
   display: inline-block;
   height: 23px;
   vertical-align: middle;
+  cursor: pointer;
 }
 
 .filter-input-radiobutton + label::before {
@@ -1591,6 +1603,7 @@ padding: 20px 35px 25px 30px;
   display: inline-block;
   height: 25px;
   vertical-align: middle;
+  cursor: pointer;
 }
 
 .filter-input-radiobutton:checked + label::before {
@@ -1603,6 +1616,7 @@ padding: 20px 35px 25px 30px;
   display: inline-block;
   height: 25px;
   vertical-align: middle;
+  cursor: pointer;
 }
 
 .filter-input-checkbox:hover + label::before {
@@ -1617,7 +1631,7 @@ padding: 20px 35px 25px 30px;
   vertical-align: middle;
 }
 
-.filter-input-checkbox:checked:hover + label:hover::before {
+.filter-input-checkbox:checked:hover + label::before {
   content: "";
   width: 35px;
   background-image: url("../img/icons/checkbox-on-hover.svg");
@@ -1629,7 +1643,7 @@ padding: 20px 35px 25px 30px;
   vertical-align: middle;
 }
 
-.filter-input-radiobutton:hover + label:hover::before {
+.filter-input-radiobutton:hover + label::before {
   content: "";
   width: 35px;
   background-image: url("../img/icons/radio-off-hover.svg");
@@ -1637,11 +1651,11 @@ padding: 20px 35px 25px 30px;
   background-position: 0 0;
   display: inline-block;
   z-index: 2;
-  height: 23px;
+  height: 25px;
   vertical-align: middle;
 }
 
-.filter-input-radiobutton:checked:hover + label:hover::before {
+.filter-input-radiobutton:checked:hover + label::before {
   content: "";
   width: 35px;
   background-image: url("../img/icons/radio-on-hover.svg");
@@ -1649,14 +1663,14 @@ padding: 20px 35px 25px 30px;
   background-position: 0 0;
   display: inline-block;
   z-index: 2;
-  height: 23px;
+  height: 25px;
   vertical-align: middle;
 }
 
 .filter-input-checkbox:disabled + label::before,
-.filter-input-checkbox:checked:disabled + label:hover::before,
-.filter-input-radiobutton:disabled + label:hover::before,
-.filter-input-radiobutton:checked:disabled + label:hover::before {
+.filter-input-checkbox:checked:disabled + label::before,
+.filter-input-radiobutton:disabled + label::before,
+.filter-input-radiobutton:checked:disabled + label::before {
   opacity: 0.3;
 }
 
@@ -1694,7 +1708,8 @@ padding: 20px 35px 25px 30px;
   text-decoration: underline solid #ee3643;
 }
 
-.sorting a:focus {
+.sorting a:focus,
+.sorting .active {
   text-decoration: none;
   color: #ee3643;
 }
@@ -1703,7 +1718,8 @@ padding: 20px 35px 25px 30px;
   fill: #231F20;
 }
 
-.sorting-arrow:active svg path {
+.sorting-arrow:active svg path,
+.sorting .active svg path {
   fill: #ee3643;
 }
 
@@ -1765,18 +1781,18 @@ padding: 20px 35px 25px 30px;
 }
 
 .catalog-item-price b {
-    position: relative;
-    width: 80px;
-    margin: 10px auto;
-    margin-bottom: 20px;
-    padding: 10px 30px;
+  position: relative;
+  width: 80px;
+  margin: 10px auto;
+  margin-bottom: 20px;
+  padding: 10px 30px;
 
-    color: white;
-    background: #ee3643;
-    border-radius: 3px;
-  }
+  color: white;
+  background: #ee3643;
+  border-radius: 3px;
+}
 
-  .catalog-item-price b:after {
+.catalog-item-price b:after {
   content: "";
 
   position: absolute;
@@ -1896,7 +1912,7 @@ padding: 20px 35px 25px 30px;
 .pagination-list li {
   list-style: none;
   margin-top: 0;
-  margin-bottom: 0;
+  margin-bottom: 10px;
   margin-right: 10px;
   border: 1px solid #e5e5e5;
   border-radius: 3px;
@@ -1914,6 +1930,7 @@ padding: 20px 35px 25px 30px;
   text-transform: uppercase;
   vertical-align: middle;
   display: inline-block;
+  cursor: pointer;
 }
 
 .pagination-item {
@@ -1921,6 +1938,7 @@ padding: 20px 35px 25px 30px;
   padding-right: 15px;
   padding-top: 6px;
   padding-bottom: 6px;
+  cursor: pointer;
 }
 
 .next-button a {
@@ -1999,8 +2017,13 @@ padding: 20px 35px 25px 30px;
   width: 940px;
   justify-content: space-between;
   align-items: flex-end;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   flex-wrap: wrap;
+}
+
+.logo-footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .footer-navigation {
@@ -2020,7 +2043,7 @@ padding: 20px 35px 25px 30px;
   display: flex;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 59px;
+  margin-bottom: 52px;
   width: 940px;
   justify-content: space-between;
 }
@@ -2170,7 +2193,7 @@ padding: 20px 35px 25px 30px;
   margin-top: 50px;
   display: none;
   z-index: 1;
-  box-shadow: 0 1px 5px rgba(0,0,0,0.3)
+  box-shadow: 0 20px 40px 0 rgba(0,1,1,0.75);
 }
 
 .write-us-form {
@@ -2347,6 +2370,7 @@ padding: 20px 35px 25px 30px;
   background-color: #ffffff;
   color: #000000;
   margin-left: 20px;
+  margin-top: 37px;
   width: 220px;
   border-radius: 5px;
   vertical-align: center;

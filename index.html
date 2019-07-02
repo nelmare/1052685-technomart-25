@@ -16,8 +16,9 @@
       <div class="header-top-wraper">
         <a class="logo" href="index.html"  aria-label="Логотип компании Техномарт"><img src="img/logo.svg" alt="Логотип Техномарта" width="109" height="19"></a>
         <form class="header-item" method="get" action="#">
-          <input type="text" name="search" placeholder="Поиск:">
-          <button class="button-search" type="submit"></button>
+          <label class="visually-hidden" for="search">Поиск</label>
+          <input type="text" name="search" id="search" placeholder="Поиск:">
+          <button class="button-search" type="submit" aria-label="Найти"></button>
         </form>
         <div class="header-link">
           <a class="tabs" href="#">Закладки: 0</a>
@@ -79,8 +80,8 @@
               <a class="button button-slider" href="#">Открыть каталог</a>
             </li>
           </ul>
-          <button class="slider-arrows button-right"></button>
-          <button class="slider-arrows button-left"></button>
+          <button class="slider-arrows button-right" type="button" aria-label="Вперед"></button>
+          <button class="slider-arrows button-left" type="button" aria-label="Назад"></button>
           <div class="slider-controls">
             <i></i>
             <i class="active"></i>
@@ -242,7 +243,7 @@
 
     <footer class="site-footer">
       <div class="footer-top">
-        <a class="logo" href="index.html"><img src="img/logo.svg" alt="Логотип Техномарта" width="109" height="19"> </a>
+        <a class="logo logo-footer" href="index.html"><img src="img/logo.svg" alt="Логотип Техномарта" width="138" height="23"></a>
         <ul class="footer-navigation">
           <li><a href="#">Компания</a></li>
           <li><a href="#">Новости</a></li>
@@ -301,12 +302,12 @@
 
    <div class="modal map">
      <img src="img/map.jpg" alt="Офис компании по адресу: Санкт-Петербург, ул. Б. Конюшенная, д. 19/8" width="940" height="446">
-     <button class="modal-close" type="button" name="form-close"></button>
+     <button class="modal-close" type="button" name="form-close" aria-label="Закрыть"></button>
    </div>
 
    <div class="modal write-us">
      <h2>Напишите нам!</h2>
-     <button class="modal-close" type="button" name="form-close"></button>
+     <button class="modal-close" type="button" name="form-close" aria-label="Закрыть"></button>
      <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
        <label class="name-line">Ваше имя
          <input type="text" name="username" placeholder="Имя Фамилия" required>
@@ -325,7 +326,7 @@
    </div>
 
    <div class="modal basket-modal">
-     <button class="modal-close" type="button" name="modal-close"></button>
+     <button class="modal-close" type="button" name="modal-close" aria-label="Закрыть"></button>
      <p class="basket-text">Товар добавлен в корзину!</p>
      <div  class="form-button-footer">
        <a class="button button-basket" href="#">Оформить заказ</a>
