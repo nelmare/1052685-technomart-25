@@ -2227,6 +2227,7 @@ input[type="radio"].visually-hidden {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 .form-close {
   position: absolute;
   right: 0;
