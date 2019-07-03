@@ -2,10 +2,12 @@ var basketLink = document.querySelectorAll(".button-buy");
 var basketPopup = document.querySelector(".basket-modal");
 var basketClose = basketPopup.querySelector(".modal-close");
 
-basketLink.addEventListener("click", function (evt) {
+for (var i = 0; i < basketLink.length; i++) {
+basketLink[i].addEventListener("click", function (evt) {
   evt.preventDefault();
   basketPopup.classList.add("modal-show");
-});
+  });
+}
 
 basketClose.addEventListener("click", function (evt) {
   evt.preventDefault();
