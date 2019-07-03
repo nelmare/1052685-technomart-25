@@ -1,4 +1,4 @@
-var basketLink = document.querySelector(".button-buy");
+var basketLink = document.querySelectorAll(".button-buy");
 var basketPopup = document.querySelector(".basket-modal");
 var basketClose = basketPopup.querySelector(".modal-close");
 
