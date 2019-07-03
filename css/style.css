@@ -5161,6 +5161,7 @@ input[type="radio"].visually-hidden {
   width: 940px;
   border: none;
   padding: 0;
+  position: relative;
 }
 
 .modal-map img {
@@ -5170,11 +5171,11 @@ input[type="radio"].visually-hidden {
   z-index: 1;
   margin: 0;
 }
-.modal-map iframe {
+/*.modal-map iframe {
   position: relative;
   z-index: 7;
   border: none;
-}
+}*/
 
 .write-us {
   width: 460px;
