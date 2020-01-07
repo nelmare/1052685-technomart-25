@@ -1349,6 +1349,13 @@ input[type="radio"].visually-hidden {
   margin-bottom: 0;
 }
 
+.features-text {
+ width: 390px;
+}
+.main-contacts-text {
+ width: 180px;
+}
+
 .main-contacts img {
   margin-top: 36px;
   vertical-align: bottom;
@@ -1949,7 +1956,7 @@ input[type="radio"].visually-hidden {
   content: "";
 
   position: absolute;
-  top: -1px;
+  top: 0px;
   right: -20px;
 
   width: 0;
