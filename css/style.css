@@ -782,8 +782,7 @@ input[type="radio"].visually-hidden {
   color: #ffffff;
   background-color: #ee3643;
   border: none;
-  padding-top: 14px;
-  padding-bottom: 12px;
+  padding-top: 13px 40px;
   text-transform: uppercase;
   border-radius: 5px;
   vertical-align: middle;
@@ -1971,9 +1970,9 @@ input[type="radio"].visually-hidden {
   border-left-color: #ee3643;
 }
 
-.no-del-price {
+/*.no-del-price {
   margin-top: 50px;
-}
+}*/
 
 .image-hover {
   position: absolute;
@@ -2422,6 +2421,7 @@ input[type="radio"].visually-hidden {
 }
 
 .modal {
+  /*display: none;*/
   position: fixed;
   top: 50%;
   left: 50%;
@@ -2430,7 +2430,6 @@ input[type="radio"].visually-hidden {
       -ms-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   margin-top: 50px;
-  display: none;
   z-index: 6;
   -webkit-box-shadow: 0 20px 40px 0 rgba(0,1,1,0.75);
           box-shadow: 0 20px 40px 0 rgba(0,1,1,0.75);
@@ -2599,7 +2598,7 @@ input[type="radio"].visually-hidden {
 }
 
 .basket-modal {
-  display: none;
+  /*display: none;*/
   width: 620px;
   border-top: 7px solid #ee3643;
   font-size: 30px;
